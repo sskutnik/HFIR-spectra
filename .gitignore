@@ -1,0 +1,6 @@
+*.out
+*.xlsx
+*.pdf
+sta_xfr.dat
+sta_dam.dat
+*_claw_725.dat

@@ -64,7 +64,7 @@ def generateFluxFiles(df, zone=None):
         flux = df[['energy', 'Lethargy-weighted']].loc[df['Position'] == pos].to_numpy()
         fluxStr = ''
         # Drop underflow bin (< Emin); get NGP+1 bounds, NGP fluxes
-        enStr = '{0:10.6e}'.format(flux[0,0])
+        enStr = ' {0:10.6e}'.format(flux[0,0])
         for i in range(1,flux.shape[0]):
             if((i % 6) == 0 and i > 0): 
                 fluxStr += "\n"

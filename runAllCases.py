@@ -1,5 +1,6 @@
 import os
 
+CLEANUP_ONLY = False
 STAYSL_EXE = \
     'C:\Program Files (x86)\STAYSL_PNNL_Suite\STAYSL_PNNL\STAYSL_PNNL.exe'
     
@@ -11,12 +12,15 @@ for root, dirs, files in os.walk(os.getcwd()):
     
     # Clean up any existing links before creating new ones
     for file in files:
-        if(root == os.getcwd()): continue
+        #Skip the current working directory and anything within fluxes
+        if(root == os.getcwd() or 'fluxes' in root): continue
         if os.path.islink( os.path.join(root,file)):
             os.unlink( os.path.join(root,file) )
         # Clean up any prior outputs
         if (('_xfr.dat' in file) or ('_dam.dat' in file) or ('.out' in file)):
             os.remove(os.path.join(root,file))
+
+    if(CLEANUP_ONLY): continue # Just cleanup; don't execute
     
     hasInputs = any(('.dat' in f or '.inp' in f) for f in files) 
     if(not hasInputs): continue 
