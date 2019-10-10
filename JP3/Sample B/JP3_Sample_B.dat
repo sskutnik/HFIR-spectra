@@ -1,12 +1,11 @@
-313-23: JP9 (Sample 'A')
-  725    5    1    0   2      <-- KG    KA    IPNT  IACT  KQT  (5I5)
+DOE-ER/0045-16 Part 2: JP3 (Sample 'B', +7.1 cm, 338 EFPD @ 100 MW, FT-5)
+  725    4    1    0    2     <-- KG    KA    IPNT  IACT  KQT  (5I5)
 0.005  9.0  0.03  0.001       <-- ACVX  FCHN  FCVX  FS         (free format)
-0.0   0   0  65973007.1  1.0  <-- AK1   NORML ILOG  TIME  ACNM (free fmt: R,I,I,R,R)
-TI46P    6.890E-12 0.050            T6P1  0.00 IWX
-MN552    1.310E-13 0.050                       IWX
-FE54P    5.000E-11 0.050                       IWX
-CO59G    4.610E-08 0.050            CONG 20.00 IWX
-NB93G    2.030E-09 0.050            NBNG 20.00 IWX
+0.0   0   0  29203200.0  1.0   <-- AK1   NORML ILOG  TIME  ACNM (free fmt: R,I,I,R,R)
+FE58G    2.150E-09 0.030            FENG 00.00 IWX
+CO59G    7.020E-08 0.030            CONG 00.00 IWX
+FE54P    6.570E-11 0.030                       IWX
+MN552    2.000E-12 0.030                       IWX
 Estimated flux uncertainties
   49
 1.000e-11 1.000e-10 5.000e-10 1.500e-09 4.000e-09 1.000e-08 2.530e-08 1.010e-06 
