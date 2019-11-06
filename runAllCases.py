@@ -13,12 +13,19 @@ for root, dirs, files in os.walk(os.getcwd()):
     # Clean up any existing links before creating new ones
     for file in files:
         #Skip the current working directory and anything within fluxes
-        if(root == os.getcwd() or 'fluxes' in root): continue
+        if(root == os.getcwd() or 'fluxes' in root or 'BCF' in root): 
+            files = []
+            break
+            
         if os.path.islink( os.path.join(root,file)):
             os.unlink( os.path.join(root,file) )
         # Clean up any prior outputs
-        if (('_xfr.dat' in file) or ('_dam.dat' in file) or ('.out' in file)):
+        if (('_dam.dat' in file) or ('staysl_pnnl_error' in file) or   
+            ('_fir.dat' in file) or ('fort.41' in file) or 
+           (('.out' in file or '_xfr.dat' in file) and (not CLEANUP_ONLY))): 
             os.remove(os.path.join(root,file))
+            files = list(filter(lambda f: f != file, files))
+            #print(files)
 
     if(CLEANUP_ONLY): continue # Just cleanup; don't execute
     
@@ -44,5 +51,7 @@ for root, dirs, files in os.walk(os.getcwd()):
     # Now run STAYSL on any inputs found
     for f in inpFiles:
         print("Now running {0:s}...".format(f))
+        print(root)
+        os.chdir(root) 
         runStr = '"{0:s}" "{1:s}" /Y'.format(STAYSL_EXE, os.path.join(root,f))
         os.system('"' + runStr + '"')

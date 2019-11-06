@@ -1,11 +1,11 @@
-313-19 Part 1: JP10 (Sample 10-10, 238.5 EFPD @ 85 MW, FT-5 midplane flux)
+313-19 Part 1: JP10 (Sample 10-11, 238.5 EFPD @ 85 MW, FT-5 midplane flux)
   725    4    1    0   2     <-- KG    KA    IPNT  IACT  KQT  (5I5)
 0.005  9.0  0.03  0.001       <-- ACVX  FCHN  FCVX  FS         (free format)
 0.0   0   0  20606400.0  1.0   <-- AK1   NORML ILOG  TIME  ACNM (free fmt: R,I,I,R,R)
-FE54P    5.420E-11 0.050                       IWX
-NB93G    2.520E-09 0.050            NBNG 00.00 IWX
-CO59G    5.300E-08 0.050            CONG 00.00 IWX
-MN552    1.600E-13 0.050            MN2N 00.00 IWX
+FE54P    4.060E-11 0.050                       IWX
+NB93G    1.840E-09 0.050            NBNG 00.00 IWX
+CO59G    4.140E-08 0.050            CONG 00.00 IWX
+MN552    1.240E-13 0.050            MN2N 00.00 IWX
 Estimated flux uncertainties
   84
  1.000e-11 1.000e-10 5.000e-10 1.500e-09 3.000e-09 4.000e-09 7.500e-09 2.530e-08
