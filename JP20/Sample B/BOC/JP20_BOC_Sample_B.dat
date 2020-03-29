@@ -2,11 +2,11 @@
   725    5    1    0   2     <-- KG    KA    IPNT  IACT  KQT  (5I5)
 0.005  9.0  0.03  0.001       <-- ACVX  FCHN  FCVX  FS         (free format)
 0.0   0   0  9521280.0  1.0  <-- AK1   NORML ILOG  TIME  ACNM (free fmt: R,I,I,R,R)
-TI46P    7.940E-12 0.050                       IWX
+TI46P    7.940E-12 0.050            T6P4 40.00 IWX
 MN552    1.750E-13 0.050            MN2N 00.00 IWX
-FE54P    5.670E-11 0.050                       IWX
-CO59G    6.600E-08 0.050            CONG 00.00 IWX
-NB93G    2.850E-09 0.050            NBNG 00.00 IWX
+FE54P    5.670E-11 0.050            FENP 20.00 IWX
+CO59G    6.600E-08 0.050            CONG 20.00 IWX
+NB93G    2.850E-09 0.050            NBNG 20.00 IWX
 Estimated flux uncertainties
   84
  1.000e-11 1.000e-10 5.000e-10 1.500e-09 3.000e-09 4.000e-09 7.500e-09 2.530e-08
