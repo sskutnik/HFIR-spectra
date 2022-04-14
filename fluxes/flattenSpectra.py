@@ -3,12 +3,20 @@ import pandas as pd
 import seaborn as sb
 import os
 import click
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import palettable.cartocolors as ccolors
 
 
 SHOW_FIGS = False
 IMG_SUFFIX = "pdf"
+font = { 'family' : 'sans-serif',
+            'sans-serif' : 'Century Gothic',
+            'size' : 14 }            
+sb.set_style("whitegrid")
+mpl.rc('font', **font)
+mpl.rc('axes', titlepad=8)
+
 
 def generateFluxFiles(df, zone=None):
     
@@ -86,7 +94,10 @@ def generateFluxes(df, eName, deName, talName, suffix = None):
 		
     df[diffName] = df[talName].div(df[deName])
     df[lethName] = df[diffName].multiply(df[eName])
-    df['sigma'].fillna(1.0)
+    sigName = 'sigma'
+    if(suffix):
+        sigName = sigName + ' ' + suffix
+    df[sigName].fillna(1.0)
     return df
 
 
@@ -128,100 +139,91 @@ df_FT3_axial_BOC = pd.read_excel(tallyFile, sheet_name='FT-3 Axial (BOC)')
 df_FT3_axBOC = flattenSheet(df_FT3_axial_BOC, 'T(E) Zone #', 'Sigma(E) Zone #', 'energy', 'deltaE')
 generateFluxFiles(df_FT3_axBOC, "FT-3")
 
+df_RB_axial_BOC = pd.read_excel(tallyFile, sheet_name='RB-1 (BOC)')
+df_RB_axBOC = flattenSheet(df_RB_axial_BOC, 'T(E) Zone #', 'Sigma(E) Zone #', 'energy', 'deltaE')
+ 
+df_RB_axial_EOC = pd.read_excel(tallyFile, sheet_name='RB-1 (EOC)')
+df_RB_axEOC = flattenSheet(df_RB_axial_EOC, 'T(E) Zone #', 'Sigma(E) Zone #', 'energy', 'deltaE') 
+
 #plt.savefig("RB_flux.png")
 
 
 plt.yscale('log')
 plt.xscale('log')
-plt.title("Radial flux variation through the flux trap region")
+plt.title("Radial flux variation within the flux trap region")
 plt.ylim([1E-6,1E-3])
 
 
 sb.lineplot(data=df_FT3_axBOC,x="energy",y="Lethargy-weighted", label="FT-3", \
-		palette=sb.diverging_palette(240, 10, l=75.,s=99, n=9,center="dark"))	
+		palette=sb.diverging_palette(240, 10, l=75.,s=99, n=9,center="dark"))
 sb.lineplot(data=df_FT4_axBOC,x="energy",y="Lethargy-weighted", label="FT-4", \
 		palette=sb.diverging_palette(240, 10, l=75.,s=99, n=9,center="dark"))		
 sb.lineplot(data=df_FT5_axBOC,x="energy",y="Lethargy-weighted", label="FT-5", \
 		palette=sb.diverging_palette(240, 10, l=75.,s=99, n=9,center="dark"))
 sb.lineplot(data=df_HT_flat,x="energy",y="Lethargy-weighted", label='HT', \
 		palette=sb.diverging_palette(240, 10, l=75.,s=99, n=9,center="dark"))
-plt.legend()
-plt.savefig("FT_fluxComp." + IMG_SUFFIX)
-if(SHOW_FIGS): plt.show()
-plt.close()
-	
-		
-
-plt.yscale('log')
-plt.xscale('log')
-sb.lineplot(data=df_HT_flat,x="energy",y="Lethargy-weighted",hue="Position", \
-			palette=sb.diverging_palette(240, 10, l=75.,s=99, n=9,center="dark"))
-	
-	
-
-plt.ylim([1E-6,1E-3])
-plt.title("Hydraulic tube (B-3)")
+plt.legend(title="Axial loc.")
 plt.ylabel("Lethargy-weighted flux (A.U.)")
-plt.xlabel("Energy (MeV)")
-plt.savefig("HT_flux." + IMG_SUFFIX)
-if(SHOW_FIGS): plt.show()
-plt.close()
-
-
-
-plt.yscale('log')
-plt.xscale('log')
-sb.lineplot(data=df_PTP_flat,x="energy",y="Lethargy-weighted",hue="Position", \
-			palette=sb.diverging_palette(240, 10, l=75.,s=99, n=7,center="dark"))
-			#palette=sb.color_palette(ccolors.diverging.Geyser_7.mpl_colors, n_colors=9))
-	
-plt.ylim([1E-6,1E-3])
-plt.title("Peripheral target position (PTP)")
-plt.ylabel("Lethargy-weighted flux (A.U.)")
-plt.xlabel("Energy (MeV)")
-plt.savefig("PTP_flux." + IMG_SUFFIX)
+plt.savefig("FT_fluxComp." + IMG_SUFFIX,bbox_inches="tight")
 if(SHOW_FIGS): plt.show()
 plt.close()
 	
-	
-
-plt.xscale("log")
-plt.yscale("log")
-
-
-df_RB = generateFluxes(df_RB, "energy", "deltaE", "T", "(BOC)")
-df_RB = generateFluxes(df_RB, "energy", "deltaE", "T", "(EOC)")
-#df_FT5 = generateFluxes(df_FT5, "energy", "deltaE", "T", "(BOC)")
-#df_FT5 = generateFluxes(df_FT5, "energy", "deltaE", "T", "(EOC)")
-
-plt.errorbar(x=df_RB["energy"],y=df_RB["Lethargy-weighted (BOC)"],\
-	yerr=df_RB["Sigma (BOC)"]*df_RB["Lethargy-weighted (BOC)"], label="RB (BOC)")
-plt.errorbar(x=df_RB["energy"],y=df_RB["Lethargy-weighted (EOC)"],
-	yerr=df_RB["Sigma (EOC)"]*df_RB["Lethargy-weighted (EOC)"],label="RB (EOC)")
-
-#plt.errorbar(x=df_FT5["energy"],y=df_FT5["Lethargy-weighted (BOC)"],\
-#	yerr=df_FT5["Sigma (BOC)"]*df_FT5["Lethargy-weighted (BOC)"], label="FT-5 (BOC)")
-#plt.errorbar(x=df_FT5["energy"],y=df_FT5["Lethargy-weighted (EOC)"],
-#	yerr=df_FT5["Sigma (EOC)"]*df_FT5["Lethargy-weighted (EOC)"],label="FT-5 (EOC)")
-		
-plt.ylim([1E-6,1E-3])
-
-plt.legend()
-#plt.savefig("RB_flux.png")
+df_HT_flat.rename(columns = {"Position" : "Ax. Loc."}, inplace=True)
+axHT = sb.relplot(data=df_HT_flat,x="energy",y="Lethargy-weighted",hue="Ax. Loc.", \
+			palette=sb.diverging_palette(240, 10, l=75.,s=99, n=9,center="dark"),kind="line",aspect=(1.5))
+axHT.set(ylim=[1E-6,1E-3],xscale="log",yscale="log",ylabel="Lethargy-weighted flux (A.U.)",xlabel="Energy (MeV)",title="Hydraulic tube (B-3)")	
 
 
-plt.yscale('log')
-plt.xscale('log')
-plt.title("Flux comparison: Hyd. tube, Outer flux trap (region 5), & Rem. Be")
-sb.lineplot(data=df_HT_flat,x="energy",y="Lethargy-weighted", label="HT", \
-		palette=sb.diverging_palette(240, 10, l=75.,s=99, n=9,center="dark"))
-sb.lineplot(data=df_FT5_axBOC,x="energy",y="Lethargy-weighted", label="FT-5", \
-		palette=sb.diverging_palette(240, 10, l=75.,s=99, n=9,center="dark"))
-sb.lineplot(data=df_FT4_axBOC,x="energy",y="Lethargy-weighted", label="FT-4", \
-		palette=sb.diverging_palette(240, 10, l=75.,s=99, n=9,center="dark"))
-sb.lineplot(data=df_FT3_axBOC,x="energy",y="Lethargy-weighted", label="FT-3", \
-		palette=sb.diverging_palette(240, 10, l=75.,s=99, n=9,center="dark"))		
-
-		
-plt.savefig("RB_comparison." + IMG_SUFFIX)
+plt.savefig("HT_flux." + IMG_SUFFIX, bbox_inches="tight")
 if(SHOW_FIGS): plt.show()
+plt.close()
+
+df_PTP_flat.rename(columns = { "Position" : "Ax. Loc."}, inplace=True)
+axPTP = sb.relplot(data=df_PTP_flat,x="energy",y="Lethargy-weighted",hue="Ax. Loc.", \
+			palette=sb.diverging_palette(240, 10, l=75.,s=99, n=7,center="dark"), kind="line",aspect=(1.5))
+axPTP.set(ylim=[1E-6,1E-3],xscale="log",yscale="log",ylabel="Lethargy-weighted flux (A.U.)",xlabel="Energy (MeV)",title="Peripheral target position (PTP)")
+
+plt.savefig("PTP_flux." + IMG_SUFFIX,bbox_inches="tight")
+if(SHOW_FIGS): plt.show()
+plt.close()
+	
+df_RB_axBOC.rename(columns = { "Position" : "Ax. Loc."}, inplace=True)
+axRB_BOC = sb.relplot(data=df_RB_axBOC,x="energy",y="Lethargy-weighted",hue="Ax. Loc.", \
+			palette=sb.diverging_palette(240, 10, l=75.,s=99, n=9,center="dark"), kind="line",aspect=(1.5))
+axRB_BOC.set(ylim=[1E-6,1E-3],xscale="log",yscale="log",ylabel="Lethargy-weighted flux (A.U.)",xlabel="Energy (MeV)",title="Removable Beryllium (RB-1), BOC")	
+            
+plt.savefig("RB_BOC_flux." + IMG_SUFFIX,bbox_inches="tight")
+if(SHOW_FIGS): plt.show()
+plt.close()
+
+df_RB_axEOC.rename(columns = { "Position" : "Ax. Loc."}, inplace=True)
+axRB_EOC = sb.relplot(data=df_RB_axEOC,x="energy",y="Lethargy-weighted",hue="Ax. Loc.", \
+			palette=sb.diverging_palette(240, 10, l=75.,s=99, n=9,center="dark"), kind="line",aspect=(1.5))
+axRB_EOC.set(ylim=[1E-6,1E-3],xscale="log",yscale="log",ylabel="Lethargy-weighted flux (A.U.)",xlabel="Energy (MeV)",title="Removable Beryllium (RB-1), EOC")	
+plt.savefig("RB_EOC_flux." + IMG_SUFFIX,bbox_inches="tight")
+if(SHOW_FIGS): plt.show()
+plt.close()
+
+eGrouped = df_FT5_axBOC.groupby(["energy"])
+#dfFluxAvg = pd.DataFrame(columns=["energy", "Avg. Flux", "loc"])
+eSeries = []
+for n,grp in eGrouped:
+   #rowData.append(grp["Lethargy-weighted"].mean())
+   rowData = [n, grp["Lethargy-weighted"].mean()]
+   rowSeries = pd.Series(n,copy=False,index=["E (MeV)", "Lethargy-weighted"])
+   eSeries.append(rowSeries)
+
+dfAvgFlux = pd.DataFrame(eSeries).assign(loc="FT-5")
+
+eGrouped = df_PTP_flat.groupby(["energy"])
+eSeries = []
+for n,grp in eGrouped:
+   rowData = [n, grp["Lethargy-weighted"].mean(), "FT-5"]
+   rowSeries = pd.Series(n,copy=False,index=["E (MeV)", "Lethargy-weighted", "loc"])
+   eSeries.append(rowSeries)
+
+dfPT = pd.DataFrame(eSeries).assign(loc="PTP")
+
+dfAvgFlux = pd.concat([dfAvgFlux,dfPT])
+print(dfAvgFlux)
+dfAvgFlux.to_csv("MCNP_avg.csv")
