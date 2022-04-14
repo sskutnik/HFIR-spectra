@@ -32,6 +32,7 @@ startDir = Path(os.getcwd()).stem
 
 sampleDFs = list()
 for root, dirs, files in os.walk(os.getcwd()):
+   print(files)
    if('sta_xfr.dat') in files:
       
       specDir = Path(root)
@@ -60,7 +61,8 @@ for root, dirs, files in os.walk(os.getcwd()):
       dfTmp["subsample"] = subSample
       
       sampleDFs.append(dfTmp)
-      
+
+print(sampleDFs)      
 dfSamples = pd.concat(sampleDFs,ignore_index=True)
 
 grid = sns.relplot(data=dfSamples,x="E (MeV)", y="Adj. F×Eavg",\
@@ -117,9 +119,10 @@ dfAvgFlux = pd.read_csv("./fluxes/MCNP_avg.csv").drop("Unnamed: 0",axis=1).renam
 print(dfAvg85MW["loc"].unique())
 
 RB_rows = dfAvg85MW.loc[dfAvg85MW["loc"] == "RB"]
-dfAvg85MW.drop(RB_rows, inplace=True)
+dfAvg85MW = dfAvg85MW.drop(RB_rows).reset_index()
 #print(dfAvgFlux)
-
+dfAvgFlux.join(dfAvg85MW, on=["E (MeV)", "loc"])
+print(dfAvgFlux)
 # Figure out the join op for dfAvgFlux & dfAvg85MW to plot the comparison by loc
 #dfAvgFlux = pd.concat(dfAvgFlux,dfAvg85MW)
 #print(dfAvgFlux)

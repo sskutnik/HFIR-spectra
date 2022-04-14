@@ -204,26 +204,33 @@ plt.savefig("RB_EOC_flux." + IMG_SUFFIX,bbox_inches="tight")
 if(SHOW_FIGS): plt.show()
 plt.close()
 
+
+#PTP_avg =  generateFluxes(df_PTP, 'T(E) AVERAGE', 'energy', 'deltaE', 'AVERAGE').rename(columns={"Lethargy-weighted AVERAGE" : "MCNP", 'sigma AVERAGE' : 'sigma-MCNP', "energy" : "E (MeV)"})
+#PTP_avg = PTP_avg[['E (MeV)','MCNP', 'sigma-MCNP']].assign(loc="PTP")
+
 eGrouped = df_FT5_axBOC.groupby(["energy"])
-#dfFluxAvg = pd.DataFrame(columns=["energy", "Avg. Flux", "loc"])
+dfFluxAvgFT5 = pd.DataFrame(columns=["energy", "MCNP", "sigma-MCNP", "loc"])
 eSeries = []
-for n,grp in eGrouped:
-   #rowData.append(grp["Lethargy-weighted"].mean())
-   rowData = [n, grp["Lethargy-weighted"].mean()]
-   rowSeries = pd.Series(n,copy=False,index=["E (MeV)", "Lethargy-weighted"])
+for n,grp in eGrouped: 
+   # Calculate root mean square of sigmas for each position
+   avgSig = np.sqrt(grp["sigma"].apply(np.square,raw=True).sum())/grp["Position"].nunique()
+   rowData = [n, grp["Lethargy-weighted"].mean(), avgSig]
+   rowSeries = pd.Series(rowData,copy=False,index=["E (MeV)", "MCNP", "sigma-MCNP"])
    eSeries.append(rowSeries)
 
-dfAvgFlux = pd.DataFrame(eSeries).assign(loc="FT-5")
+dfFluxAvgFT5 = pd.DataFrame(eSeries).assign(loc="FT-5")
 
 eGrouped = df_PTP_flat.groupby(["energy"])
+dfFluxAvgPTP = pd.DataFrame(columns=["energy", "MCNP", "sigma-MCNP", "loc"])
 eSeries = []
-for n,grp in eGrouped:
-   rowData = [n, grp["Lethargy-weighted"].mean(), "FT-5"]
-   rowSeries = pd.Series(n,copy=False,index=["E (MeV)", "Lethargy-weighted", "loc"])
+for n,grp in eGrouped: 
+   # Calculate root mean square of sigmas for each position
+   avgSig = np.sqrt(grp["sigma"].apply(np.square,raw=True).sum())/grp["Ax. Loc."].nunique()
+   rowData = [n, grp["Lethargy-weighted"].mean(), avgSig]
+   rowSeries = pd.Series(rowData,copy=False,index=["E (MeV)", "MCNP", "sigma-MCNP"])
    eSeries.append(rowSeries)
 
-dfPT = pd.DataFrame(eSeries).assign(loc="PTP")
+dfFluxAvgPTP = pd.DataFrame(eSeries).assign(loc="PTP")
 
-dfAvgFlux = pd.concat([dfAvgFlux,dfPT])
-print(dfAvgFlux)
+dfAvgFlux = pd.concat([dfFluxAvgFT5, dfFluxAvgPTP],ignore_index=True)
 dfAvgFlux.to_csv("MCNP_avg.csv")
