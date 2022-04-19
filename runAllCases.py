@@ -40,7 +40,10 @@ for root, dirs, files in os.walk(os.getcwd()):
     xsPath = os.path.join(root, 'xsectlib_claw_725.dat')
     covPath = os.path.join(root, 'covarlib_claw_725.dat')
     sshldPath = os.path.join(root, 'sshldlib_claw_725.dat')
-    
+#    xsPath = os.path.join(root, 'xsectlib.dat')
+    #covPath = os.path.join(root, 'covarlib.dat')
+    #sshldPath = os.path.join(root, 'sshldlib.dat') 
+
     if(not os.path.isfile(xsPath) and not os.path.islink(xsPath) ):
         os.symlink(xsLib, xsPath)
     if(not os.path.isfile(covPath) and not os.path.islink(covPath) ):        
@@ -51,7 +54,7 @@ for root, dirs, files in os.walk(os.getcwd()):
     # Now run STAYSL on any inputs found
     for f in inpFiles:
         print("Now running {0:s}...".format(f))
-        print(root)
+        #print(root)
         os.chdir(root) 
         runStr = '"{0:s}" "{1:s}" /Y'.format(STAYSL_EXE, os.path.join(root,f))
         os.system('"' + runStr + '"')

@@ -1,253 +1,225 @@
-CTR-30	Sample A	CTR30_Sample_A.out	1.23364
-CTR-30	Sample B	CTR30_Sample_B.out	 NaN
-CTR-30	Sample C	CTR30_Sample_C.out	0.4211
-CTR-30	Sample D	CTR30_Sample_D.out	 NaN
-CTR-30	Sample E	CTR30_Sample_E.out	0.36501
-CTR-30	Sample F	CTR30_Sample_F.out	 Infinity
-CTR-30	Sample G	CTR30_Sample_G.out	0.28972
-CTR-30	Sample H	CTR30_Sample_H.out	 NaN
-CTR-30	Sample I	CTR30_Sample_I.out	5.13025
-CTR-30	Sample J	CTR30_Sample_J.out	4.70375
-CTR-30	Sample K	CTR30_Sample_K.out	 Infinity
-CTR-31	Sample A	CTR_31_Sample_A.out	0.22404
-CTR-31	Sample B	CTR_31_Sample_B.out	2.58374
-CTR-31	Sample C	CTR_31_Sample_C.out	16.61095
-CTR-31	Sample D	CTR_31_Sample_D.out	6.13126
-CTR-31	Sample E	CTR_31_Sample_E.out	5.36571
-CTR-31	Sample F	CTR_31_Sample_F.out	6.40124
-CTR-31	Sample G	CTR_31_Sample_G.out	4.7541
-CTR-32	Sample A	CTR_32_Sample_A.out	3.35023
-CTR-32	Sample B	CTR_32_Sample_B.out	6.28996
-CTR-32	Sample C	CTR_32_Sample_C.out	5.36623
-CTR-32	Sample D	CTR_32_Sample_D.out	 Infinity
-CTR-32	Sample E	CTR_32_Sample_E.out	3.1378
-CTR-32	Sample F	CTR_32_Sample_F.out	 Infinity
-CTR-32	Sample G	CTR_32_Sample_G.out	4.09434
-CTR-32	Sample H	CTR_32_Sample_H.out	4.82368
-CTR-32	Sample I	CTR_32_Sample_I.out	9.75672
-CTR-32	Sample J	CTR_32_Sample_J.out	 Infinity
-CTR-32	Sample K	CTR_32_Sample_K.out	3.87138
-CTR-32	Sample L	CTR_32_Sample_L.out	 Infinity
-CTR-34	Sample A	CTR_34_Sample_A.out	1.09498
-CTR-34	Sample B	CTR_34_Sample_B.out	1.49725
-CTR-34	Sample C	CTR_34_Sample_C.out	2.85808
-CTR-34	Sample D	CTR_34_Sample_D.out	 NaN
-CTR-34	Sample E	CTR_34_Sample_E.out	1.90684
-CTR-34	Sample F	CTR_34_Sample_F.out	2.9922
-CTR-34	Sample G	CTR_34_Sample_G.out	2.08882
-CTR-34	Sample H	CTR_34_Sample_H.out	1.93682
-CTR-35	Sample A	CTR_35_Sample_A.out	2.68749
-CTR-35	Sample B	CTR_35_Sample_B.out	2.79064
-CTR-35	Sample C	CTR_35_Sample_C.out	2.93945
-CTR-35	Sample D	CTR_35_Sample_D.out	 NaN
-CTR-35	Sample E	CTR_35_Sample_E.out	3.59384
-CTR-35	Sample F	CTR_35_Sample_F.out	2.13623
-CTR-35	Sample G	CTR_35_Sample_G.out	3.16354
-CTR-36	Sample A	CTR36_Sample_A.out	1.13714
-CTR-36	Sample B	CTR36_Sample_B.out	3.26161
-CTR-36	Sample C	CTR36_Sample_C.out	1.26307
-CTR-36	Sample D	CTR36_Sample_D.out	1.96959
-CTR-36	Sample E	CTR36_Sample_E.out	5.26622
-CTR-39	Sample A	CTR39_Sample_A.out	1.78659
-CTR-39	Sample B	CTR39_Sample_B.out	1.25835
-CTR-39	Sample C	CTR39_Sample_C.out	0.99708
-CTR-40	Sample A	CTR40_Sample_A.out	0.66338
-CTR-40	Sample B	CTR40_Sample_B.out	2.33501
-CTR-40	Sample C	CTR40_Sample_C.out	0.78971
-CTR-40	Sample D	CTR40_Sample_D.out	2.08311
-CTR-40	Sample E	CTR40_Sample_E.out	1.18684
-CTR-40	Sample F	CTR40_Sample_F.out	2.65348
-CTR-41	Sample A	CTR41_Sample_A.out	0.66338
-CTR-41	Sample B	CTR41_Sample_B.out	2.33501
-CTR-41	Sample C	CTR41_Sample_C.out	0.78971
-CTR-41	Sample D	CTR41_Sample_D.out	2.08311
-CTR-41	Sample E	CTR41_Sample_E.out	1.18684
-CTR-41	Sample F	CTR41_Sample_F.out	2.65348
-CTR-42-43	Sample A	CTR42_43_Sample_A.out	0.7548
-CTR-42-43	Sample B	CTR42_43_Sample_B.out	0.90618
-CTR-42-43	Sample C	CTR42_43_Sample_C.out	1.08803
-CTR-42-43	Sample D	CTR42_43_Sample_D.out	1.1455
-CTR-42-43	Sample E	CTR42_43_Sample_E.out	1.50556
-CTR-42-43	Sample F	CTR42_43_Sample_F.out	1.02711
-CTR-42-43	Sample G	CTR42_43_Sample_G.out	1.03798
-CTR-44-45	Sample A	CTR44_45_Sample_A.out	2.15318
-CTR-44-45	Sample B	CTR44_45_Sample_B.out	1.38888
-CTR-44-45	Sample C	CTR44_45_Sample_C.out	1.8867
-CTR-44-45	Sample D	CTR44_45_Sample_D.out	1.47192
-CTR-44-45	Sample E	CTR44_45_Sample_E.out	1.31677
-CTR-44-45	Sample F	CTR44_45_Sample_F.out	1.8191
-CTR-46	Sample A	CTR46_Sample_A.out	1.1593
-CTR-46	Sample B	CTR46_Sample_B.out	1.80102
-CTR-46	Sample C	CTR46_Sample_C.out	3.44021
-CTR-46	Sample D	CTR46_Sample_D.out	2.56754
-CTR-46	Sample E	CTR46_Sample_E.out	2.15893
-CTR-47	Sample A	CTR47_Sample_A.out	0.37503
-CTR-47	Sample B	CTR47_Sample_B.out	2.79539
-CTR-47	Sample C	CTR47_Sample_C.out	0.0387
-CTR-47	Sample D	CTR47_Sample_D.out	0.52465
-CTR-47	Sample E	CTR47_Sample_E.out	2.56949
-CTR-48	Sample A	CTR48_Sample_A.out	0.06929
-CTR-48	Sample B	CTR48_Sample_B.out	0.48438
-CTR-48	Sample C	CTR48_Sample_C.out	0.35259
-CTR-48	Sample D	CTR48_Sample_D.out	2.34806
-CTR-53	Sample A	CTR_53_Sample_A.out	2.60066
-CTR-53	Sample B	CTR_53_Sample_B.out	9.19759
-CTR-53	Sample C	CTR_53_Sample_C.out	0.84308
-CTR-53	Sample D	CTR_53_Sample_D.out	1.64165
-CTR-53	Sample E	CTR_53_Sample_E.out	1.85283
-CTR-53	Sample F	CTR_53_Sample_F.out	0.99118
-CTR-53	Sample G	CTR_53_Sample_G.out	2.73678
-CTR-53	Sample H	CTR_53_Sample_H.out	7.2198
-CTR-54	Sample A	CTR_54_Sample_A.out	2.16698
-CTR-54	Sample B	CTR_54_Sample_B.out	1.31102
-CTR-54	Sample C	CTR_54_Sample_C.out	1.36009
-CTR-54	Sample D	CTR_54_Sample_D.out	0.58296
-CTR-54	Sample E	CTR_54_Sample_E.out	2.29054
-CTR-54	Sample F	CTR_54_Sample_F.out	4.27487
-CTR-54	Sample G	CTR_54_Sample_G.out	0.22576
-CTR-54	Sample H	CTR_54_Sample_H.out	0.61901
-CTR-62	Sample A	CTR62_BOC_Sample_A.out	3.71318
-CTR-62	Sample A	CTR62_EOC_Sample_A.out	2.79405
-CTR-62	Sample B	CTR62_BOC_Sample_B.out	1.401
-CTR-62	Sample B	CTR62_EOC_Sample_B.out	1.04369
-CTR-62	Sample C	CTR_62_BOC_Sample_C.out	2.04019
-CTR-62	Sample C	CTR62_EOC_Sample_C.out	1.31748
-CTR-63	Sample A	CTR63_BOC_Sample_A.out	3.10079
-CTR-63	Sample A	CTR63_EOC_Sample_A.out	1.70271
-CTR-63	Sample B	CTR63_BOC_Sample_B.out	2.1957
-CTR-63	Sample B	CTR63_EOC_Sample_B.out	1.06246
-CTR-63	Sample C	CTR63_BOC_Sample_C.out	0.67239
-CTR-63	Sample C	CTR63_EOC_Sample_C.out	0.70247
-JP1	Sample A	JP1_Sample_A.out	0.498
-JP1	Sample B	JP1_Sample_B.out	3.96846
-JP1	Sample C	JP1_Sample_C.out	2.72488
-JP1	Sample D	JP1_Sample_D.out	1.97566
-JP1	Sample E	JP1_Sample_E.out	0.66966
-JP10	Sample A	JP10_BOC_Sample_A.out	3.53778
-JP10	Sample B	JP10_BOC_Sample_B.out	3.4205
-JP10	Sample C	JP10_BOC_Sample_C.out	2.04649
-JP10	Sample D	JP10_BOC_Sample_D.out	1.47415
-JP10	Sample E	JP10_BOC_Sample_E.out	1.26209
-JP11	Sample A	JP11_BOC_Sample_A.out	3.4838
-JP11	Sample A	JP11_EOC_Sample_A.out	3.49704
-JP11	Sample B	JP11_BOC_Sample_B.out	2.28248
-JP11	Sample B	JP11_EOC_Sample_B.out	2.28043
-JP11	Sample C	JP11_BOC_Sample_C.out	1.89126
-JP11	Sample C	JP11_EOC_Sample_C.out	2.17319
-JP11	Sample D	JP11_BOC_Sample_D.out	2.99348
-JP11	Sample D	JP11_EOC_Sample_D.out	2.95013
-JP11	Sample E	JP11_BOC_Sample_E.out	1.11633
-JP11	Sample E	JP11_EOC_Sample_E.out	0.80423
-JP12	Sample A	JP12_BOC_Sample_A.out	2.52719
-JP12	Sample A	JP12_EOC_Sample_A.out	1.22946
-JP12	Sample B	JP12_BOC_Sample_B.out	2.2758
-JP12	Sample B	JP12_EOC_Sample_B.out	1.2434
-JP13	Sample A	JP13_BOC_Sample_A.out	0.77472
-JP13	Sample A	JP13_EOC_Sample_A.out	0.77472
-JP13	Sample B	JP13_BOC_Sample_B.out	1.51996
-JP13	Sample B	JP13_EOC_Sample_B.out	1.51996
-JP13	Sample C	JP13_BOC_Sample_C.out	3.68781
-JP13	Sample C	JP13_EOC_Sample_C.out	3.68781
-JP13	Sample D	JP13_BOC_Sample_D.out	5.54305
-JP13	Sample D	JP13_EOC_Sample_D.out	5.54305
-JP13	Sample E	JP13_BOC_Sample_E.out	3.1379
-JP13	Sample E	JP13_EOC_Sample_E.out	3.1379
-JP15	Sample A	JP15_BOC_Sample_A.out	0.53087
-JP15	Sample B	JP15_BOC_Sample_B.out	2.27202
-JP15	Sample C	JP15_BOC_Sample_C.out	1.64229
-JP16	Sample A	JP16_BOC_Sample_A.out	1.38326
-JP16	Sample B	JP16_BOC_Sample_B.out	2.65491
-JP16	Sample C	JP16_BOC_Sample_C.out	5.02476
-JP16	Sample D	JP16_BOC_Sample_D.out	5.17494
-JP16	Sample E	JP16_BOC_Sample_E.out	4.4392
-JP16	Sample F	JP16_BOC_Sample_F.out	3.96696
-JP17	Sample A	JP17_Sample_A.out	0.36907
-JP17	Sample B	JP17_Sample_B.out	1.97343
-JP17	Sample C	JP17_Sample_C.out	1.1915
-JP17	Sample D	JP17_BOC_Sample_D.out	3.15511
-JP17	Sample E	JP17_Sample_E.out	0.42634
-JP18	Sample A	JP18_Sample_A.out	3.05392
-JP18	Sample B	JP18_Sample_B.out	2.21618
-JP18	Sample C	JP18_Sample_C.out	2.43466
-JP19	Sample A	JP19_Sample_A.out	3.54389
-JP19	Sample B	JP19_Sample_B.out	4.426
-JP2	Sample A	JP2_Sample_A.out	0.05562
-JP2	Sample B	JP2_Sample_B.out	1.0157
-JP2	Sample C	JP2_Sample_C.out	1.09491
-JP2	Sample D	JP2_Sample_D.out	1.73407
-JP2	Sample E	JP2_Sample_E.out	1.26654
-JP2	Sample F	JP2_Sample_F.out	0.4952
-JP20	Sample A	JP20_BOC_Sample_A.out	0.69871
-JP20	Sample B	JP20_BOC_Sample_B.out	0.39666
-JP23	Sample A	JP23_BOC_Sample_A.out	0.57266
-JP23	Sample A	JP23_EOC_Sample_A.out	0.4257
-JP23	Sample B	JP23_BOC_Sample_B.out	0.20656
-JP23	Sample B	JP23_EOC_Sample_B.out	0.4597
-JP23	Sample C	JP23_BOC_Sample_C.out	7.25933
-JP23	Sample C	JP23_EOC_Sample_C.out	0.71285
-JP23	Sample D	JP23_BOC_Sample_D.out	0.73116
-JP23	Sample D	JP23_EOC_Sample_D.out	0.61504
-JP23	Sample E	JP23_BOC_Sample_E.out	0.50501
-JP23	Sample E	JP23_EOC_Sample_E.out	0.67283
-JP3	Sample A	JP3_Sample_A.out	0.71818
-JP3	Sample B	JP3_Sample_B.out	1.47944
-JP3	Sample C	JP3_Sample_C.out	1.09519
-JP3	Sample D	JP3_Sample_D.out	0.59228
-JP3	Sample E	JP3_Sample_E.out	1.33095
-JP4	Sample A	JP4_Sample_A.out	3.4063
-JP4	Sample B	JP4_Sample_B.out	1.24233
-JP4	Sample C	JP4_Sample_C.out	4.58772
-JP5	Sample A	JP5_BOC_Sample_A.out	8.39193
-JP5	Sample B	JP5_BOC_Sample_B.out	2.52133
-JP5	Sample C	JP5_BOC_Sample_C.out	0.04273
-JP5	Sample D	JP5_BOC_Sample_D.out	0.91723
-JP5	Sample E	JP5_BOC_Sample_E.out	1.24347
-JP6	Sample A	JP6_Sample_A.out	1.1266
-JP6	Sample B	JP6_Sample_B.out	1.52436
-JP6	Sample C	JP6_Sample_C.out	6.46353
-JP6	Sample D	JP6_Sample_D.out	6.3877
-JP6	Sample E	JP6_Sample_E.out	3.64609
-JP6	Sample F	JP6_Sample_F.out	0.97084
-JP7	Sample A	JP7_Sample_A.out	0.9232
-JP7	Sample B	JP7_Sample_B.out	5.40306
-JP8	Sample A	JP8_BOC_Sample_A.out	2.87892
-JP8	Sample B	JP8_BOC_Sample_B.out	2.80058
-JP8	Sample C	JP8_BOC_Sample_C.out	8.99287
-JP9	Sample A	JP9_Sample_A.out	0.36538
-JP9	Sample B	JP9_Sample_B.out	0.21848
-RB1	Sample A	RB1_BOC_Sample_A.out	 NaN
-RB1	Sample A	RB1_EOC_Sample_A.out	 Infinity
-RB1	Sample B	RB1_BOC_Sample_B.out	 Infinity
-RB1	Sample B	RB1_EOC_Sample_B.out	 Infinity
-RB1	Sample C	RB1_BOC_Sample_C.out	1.78461
-RB1	Sample C	RB1_EOC_Sample_C.out	2.23056
-RB1	Sample D	RB1_BOC_Sample_D.out	1.616
-RB1	Sample D	RB1_EOC_Sample_D.out	2.95053
-RB1	Sample E	RB1_BOC_Sample_E.out	1.0667
-RB1	Sample E	RB1_EOC_Sample_E.out	3.35362
-T1	Sample A	T1_Sample_A.out	0.2816
-T1	Sample B	T1_Sample_B.out	0.97636
-T2	Sample A	T2_BOC_Sample_A.out	2.67359
-T2	Sample A	T2_EOC_Sample_A.out	1.12194
-T2	Sample B	T2_BOC_Sample_B.out	1.84888
-T2	Sample B	T2_EOC_Sample_B.out	0.16638
-TRIST-ER-1-2	Sample A	Trist_1-2_BOC_Sample_A.out	0.77989
-TRIST-ER-1-2	Sample A	Trist_1-2_EOC_Sample_A.out	2.40587
-TRIST-ER-1-2	Sample B	Trist_1-2_BOC_Sample_B.out	0.78652
-TRIST-ER-1-2	Sample B	Trist_1-2_EOC_Sample_B.out	1.64842
-TRIST-ER-1-2	Sample C	Trist_1-2_BOC_Sample_C.out	0.13942
-TRIST-ER-1-2	Sample C	Trist_1-2_EOC_Sample_C.out	1.24878
-TRIST-ER-1-2	Sample D	Trist_1-2_BOC_Sample_D.out	1.00731
-TRIST-ER-1-2	Sample D	Trist_1-2_EOC_Sample_D.out	1.00455
-TRIST-ER-1-2	Sample E	Trist_1-2_BOC_Sample_E.out	0.96733
-TRIST-ER-1-2	Sample E	Trist_1-2_EOC_Sample_E.out	0.96577
-TRIST-ER-7-8	Sample A	Trist_7-8_BOC_Sample_A.out	0.97396
-TRIST-ER-7-8	Sample A	Trist_7-8_EOC_Sample_A.out	5.32919
-TRIST-ER-7-8	Sample B	Trist_7-8_BOC_Sample_B.out	1.01304
-TRIST-ER-7-8	Sample B	Trist_7-8_EOC_Sample_B.out	2.80029
-TRIST-ER-7-8	Sample C	Trist_7-8_BOC_Sample_C.out	0.93205
-TRIST-ER-7-8	Sample C	Trist_7-8_EOC_Sample_C.out	1.98697
-TRIST-ER-7-8	Sample D	Trist_7-8_BOC_Sample_D.out	1.27648
-TRIST-ER-7-8	Sample D	Trist_7-8_EOC_Sample_D.out	1.74876
-TRIST-ER-7-8	Sample E	Trist_7-8_BOC_Sample_E.out	2.12499
-TRIST-ER-7-8	Sample E	Trist_7-8_EOC_Sample_E.out	2.76579
+CTR-30/Sample A/CTR30_Sample_A.out: 1.23364
+CTR-30/Sample B/CTR30_Sample_B.out: NaN
+CTR-30/Sample C/CTR30_Sample_C.out: 0.42110
+CTR-30/Sample D/CTR30_Sample_D.out: NaN
+CTR-30/Sample E/CTR30_Sample_E.out: 0.36501
+CTR-30/Sample F/CTR30_Sample_F.out: Infinity
+CTR-30/Sample G/CTR30_Sample_G.out: 0.28972
+CTR-30/Sample H/CTR30_Sample_H.out: NaN
+CTR-30/Sample I/CTR30_Sample_I.out: 5.13025
+CTR-30/Sample J/CTR30_Sample_J.out: 4.70375
+CTR-30/Sample K/CTR30_Sample_K.out: Infinity
+CTR-31/Sample A/CTR_31_Sample_A.out: 0.22404
+CTR-31/Sample B/CTR_31_Sample_B.out: 2.58374
+CTR-31/Sample C/CTR_31_Sample_C.out: 16.61095
+CTR-31/Sample D/CTR_31_Sample_D.out: 6.13126
+CTR-31/Sample E/CTR_31_Sample_E.out: 5.36571
+CTR-31/Sample F/CTR_31_Sample_F.out: 6.40124
+CTR-31/Sample G/CTR_31_Sample_G.out: 4.75410
+CTR-32/Sample A/CTR_32_Sample_A.out: 3.35023
+CTR-32/Sample B/CTR_32_Sample_B.out: 6.28996
+CTR-32/Sample C/CTR_32_Sample_C.out: 5.36623
+CTR-32/Sample D/CTR_32_Sample_D.out: Infinity
+CTR-32/Sample E/CTR_32_Sample_E.out: 3.13780
+CTR-32/Sample F/CTR_32_Sample_F.out: Infinity
+CTR-32/Sample G/CTR_32_Sample_G.out: 4.09434
+CTR-32/Sample H/CTR_32_Sample_H.out: 4.82368
+CTR-32/Sample I/CTR_32_Sample_I.out: 9.75672
+CTR-32/Sample J/CTR_32_Sample_J.out: Infinity
+CTR-32/Sample K/CTR_32_Sample_K.out: 3.87138
+CTR-32/Sample L/CTR_32_Sample_L.out: Infinity
+CTR-34/Sample A/CTR_34_Sample_A.out: 1.09498
+CTR-34/Sample B/CTR_34_Sample_B.out: 1.49725
+CTR-34/Sample C/CTR_34_Sample_C.out: 2.85808
+CTR-34/Sample D/CTR_34_Sample_D.out: NaN
+CTR-34/Sample E/CTR_34_Sample_E.out: 1.90684
+CTR-34/Sample F/CTR_34_Sample_F.out: 2.99220
+CTR-34/Sample G/CTR_34_Sample_G.out: 2.08882
+CTR-34/Sample H/CTR_34_Sample_H.out: 1.93682
+CTR-35/Sample A/CTR_35_Sample_A.out: 2.68749
+CTR-35/Sample B/CTR_35_Sample_B.out: 2.79064
+CTR-35/Sample C/CTR_35_Sample_C.out: 2.93945
+CTR-35/Sample D/CTR_35_Sample_D.out: NaN
+CTR-35/Sample E/CTR_35_Sample_E.out: 3.59384
+CTR-35/Sample F/CTR_35_Sample_F.out: 2.13623
+CTR-35/Sample G/CTR_35_Sample_G.out: 3.16354
+CTR-36/Sample A/CTR36_Sample_A.out: 1.13714
+CTR-36/Sample B/CTR36_Sample_B.out: 3.26161
+CTR-36/Sample C/CTR36_Sample_C.out: 1.26307
+CTR-36/Sample D/CTR36_Sample_D.out: 1.96959
+CTR-36/Sample E/CTR36_Sample_E.out: 5.26622
+CTR-39/Sample A/CTR39_Sample_A.out: 1.78659
+CTR-39/Sample B/CTR39_Sample_B.out: 1.25835
+CTR-39/Sample C/CTR39_Sample_C.out: 0.99708
+CTR-40/Sample A/CTR40_Sample_A.out: 0.66338
+CTR-40/Sample B/CTR40_Sample_B.out: 2.33501
+CTR-40/Sample C/CTR40_Sample_C.out: 0.78971
+CTR-40/Sample D/CTR40_Sample_D.out: 2.08311
+CTR-40/Sample E/CTR40_Sample_E.out: 1.18684
+CTR-40/Sample F/CTR40_Sample_F.out: 2.65348
+CTR-41/Sample A/CTR41_Sample_A.out: 0.66338
+CTR-41/Sample B/CTR41_Sample_B.out: 2.33501
+CTR-41/Sample C/CTR41_Sample_C.out: 0.78971
+CTR-41/Sample D/CTR41_Sample_D.out: 2.08311
+CTR-41/Sample E/CTR41_Sample_E.out: 1.18684
+CTR-41/Sample F/CTR41_Sample_F.out: 2.65348
+CTR-42-43/Sample A/CTR42_43_Sample_A.out: 0.75480
+CTR-42-43/Sample B/CTR42_43_Sample_B.out: 0.90618
+CTR-42-43/Sample C/CTR42_43_Sample_C.out: 1.08803
+CTR-42-43/Sample D/CTR42_43_Sample_D.out: 1.14550
+CTR-42-43/Sample E/CTR42_43_Sample_E.out: 1.50556
+CTR-42-43/Sample F/CTR42_43_Sample_F.out: 1.02711
+CTR-42-43/Sample G/CTR42_43_Sample_G.out: 1.03798
+CTR-44-45/Sample A/CTR44_45_Sample_A.out: 2.15318
+CTR-44-45/Sample B/CTR44_45_Sample_B.out: 1.38888
+CTR-44-45/Sample C/CTR44_45_Sample_C.out: 1.88670
+CTR-44-45/Sample D/CTR44_45_Sample_D.out: 1.47192
+CTR-44-45/Sample E/CTR44_45_Sample_E.out: 1.31677
+CTR-44-45/Sample F/CTR44_45_Sample_F.out: 1.81910
+CTR-46/Sample A/CTR46_Sample_A.out: 1.15930
+CTR-46/Sample B/CTR46_Sample_B.out: 1.80102
+CTR-46/Sample C/CTR46_Sample_C.out: 3.44021
+CTR-46/Sample D/CTR46_Sample_D.out: 2.56754
+CTR-46/Sample E/CTR46_Sample_E.out: 2.15893
+CTR-47/Sample A/CTR47_Sample_A.out: 0.37503
+CTR-47/Sample B/CTR47_Sample_B.out: 2.79539
+CTR-47/Sample C/CTR47_Sample_C.out: 0.03870
+CTR-47/Sample D/CTR47_Sample_D.out: 0.52465
+CTR-47/Sample E/CTR47_Sample_E.out: 2.56949
+CTR-48/Sample A/CTR48_Sample_A.out: 0.06929
+CTR-48/Sample B/CTR48_Sample_B.out: 0.48438
+CTR-48/Sample C/CTR48_Sample_C.out: 0.35259
+CTR-48/Sample D/CTR48_Sample_D.out: 2.34806
+CTR-53/Sample A/CTR_53_Sample_A.out: 2.60066
+CTR-53/Sample B/CTR_53_Sample_B.out: 9.19759
+CTR-53/Sample C/CTR_53_Sample_C.out: 0.84308
+CTR-53/Sample D/CTR_53_Sample_D.out: 1.64165
+CTR-53/Sample E/CTR_53_Sample_E.out: 1.85283
+CTR-53/Sample F/CTR_53_Sample_F.out: 0.99118
+CTR-53/Sample G/CTR_53_Sample_G.out: 2.73678
+CTR-53/Sample H/CTR_53_Sample_H.out: 7.21980
+CTR-54/Sample A/CTR_54_Sample_A.out: 2.16698
+CTR-54/Sample B/CTR_54_Sample_B.out: 1.31102
+CTR-54/Sample C/CTR_54_Sample_C.out: 1.36009
+CTR-54/Sample D/CTR_54_Sample_D.out: 0.58296
+CTR-54/Sample E/CTR_54_Sample_E.out: 2.29054
+CTR-54/Sample F/CTR_54_Sample_F.out: 4.27487
+CTR-54/Sample G/CTR_54_Sample_G.out: 0.22576
+CTR-54/Sample H/CTR_54_Sample_H.out: 0.61901
+CTR-62/Sample A/CTR62_BOC_Sample_A.out: 3.71318
+CTR-62/Sample B/CTR62_BOC_Sample_B.out: 1.40100
+CTR-62/Sample C/BOC/CTR_62_BOC_Sample_C.out: 2.04019
+CTR-62/Sample C/EOC/CTR62_EOC_Sample_C.out: 1.31748
+CTR-63/Sample A/CTR63_BOC_Sample_A.out: 3.10079
+CTR-63/Sample B/CTR63_BOC_Sample_B.out: 2.19570
+CTR-63/Sample C/CTR63_BOC_Sample_C.out: 0.67239
+JP1/Sample A/JP1_Sample_A.out: 0.49800
+JP1/Sample B/JP1_Sample_B.out: 3.96846
+JP1/Sample C/JP1_Sample_C.out: 2.72488
+JP1/Sample D/JP1_Sample_D.out: 1.97566
+JP1/Sample E/JP1_Sample_E.out: 0.66966
+JP10/Sample A/JP10_BOC_Sample_A.out: 3.53778
+JP10/Sample B/JP10_BOC_Sample_B.out: 3.42050
+JP10/Sample C/JP10_BOC_Sample_C.out: 2.04649
+JP10/Sample D/JP10_BOC_Sample_D.out: 1.47415
+JP10/Sample E/JP10_BOC_Sample_E.out: 1.26209
+JP11/Sample A/JP11_BOC_Sample_A.out: 3.48380
+JP11/Sample B/JP11_BOC_Sample_B.out: 2.28248
+JP11/Sample C/JP11_BOC_Sample_C.out: 1.89126
+JP11/Sample D/JP11_BOC_Sample_D.out: 2.99348
+JP11/Sample E/JP11_BOC_Sample_E.out: 1.11633
+JP12/Sample A/JP12_EOC_Sample_A.out: 1.22946
+JP12/Sample B/JP12_EOC_Sample_B.out: 1.24340
+JP13/Sample A/JP13_EOC_Sample_A.out: 0.77472
+JP13/Sample B/JP13_EOC_Sample_B.out: 1.51996
+JP13/Sample C/JP13_EOC_Sample_C.out: 3.68781
+JP13/Sample D/JP13_EOC_Sample_D.out: 5.54305
+JP13/Sample E/JP13_EOC_Sample_E.out: 3.13790
+JP15/Sample A/BOC/JP15_BOC_Sample_A.out: 0.53087
+JP15/Sample B/BOC/JP15_BOC_Sample_B.out: 2.27202
+JP15/Sample C/BOC/JP15_BOC_Sample_C.out: 1.64229
+JP16/Sample A/JP16_BOC_Sample_A.out: 1.38326
+JP16/Sample B/JP16_BOC_Sample_B.out: 2.65491
+JP16/Sample C/JP16_BOC_Sample_C.out: 5.02476
+JP16/Sample D/JP16_BOC_Sample_D.out: 5.17494
+JP16/Sample E/JP16_BOC_Sample_E.out: 4.43920
+JP16/Sample F/JP16_BOC_Sample_F.out: 3.96696
+JP17/Sample A/JP17_Sample_A.out: 0.36907
+JP17/Sample B/JP17_Sample_B.out: 1.97343
+JP17/Sample C/JP17_Sample_C.out: 1.19150
+JP17/Sample D/JP17_BOC_Sample_D.out: 3.15511
+JP17/Sample E/JP17_Sample_E.out: 0.42634
+JP18/Sample A/JP18_Sample_A.out: 3.05392
+JP18/Sample B/JP18_Sample_B.out: 2.21618
+JP18/Sample C/JP18_Sample_C.out: 2.43466
+JP19/Sample A/JP19_Sample_A.out: 3.54389
+JP19/Sample B/JP19_Sample_B.out: 4.42600
+JP2/Sample A/JP2_Sample_A.out: 0.05562
+JP2/Sample B/JP2_Sample_B.out: 1.01570
+JP2/Sample C/JP2_Sample_C.out: 1.09491
+JP2/Sample D/JP2_Sample_D.out: 1.73407
+JP2/Sample E/JP2_Sample_E.out: 1.26654
+JP2/Sample F/JP2_Sample_F.out: 0.49520
+JP20/Sample A/JP20_BOC_Sample_A.out: 0.69871
+JP20/Sample B/JP20_BOC_Sample_B.out: 0.39666
+JP23/Sample A/JP23_EOC_Sample_A.out: 0.42570
+JP23/Sample B/JP23_EOC_Sample_B.out: 0.45970
+JP23/Sample C/JP23_EOC_Sample_C.out: 0.71285
+JP23/Sample D/JP23_EOC_Sample_D.out: 0.61504
+JP23/Sample E/JP23_EOC_Sample_E.out: 0.67283
+JP3/Sample A/JP3_Sample_A.out: 0.71818
+JP3/Sample B/JP3_Sample_B.out: 1.47944
+JP3/Sample C/JP3_Sample_C.out: 1.09519
+JP3/Sample D/JP3_Sample_D.out: 0.59228
+JP3/Sample E/JP3_Sample_E.out: 1.33095
+JP4/Sample A/JP4_Sample_A.out: 3.40630
+JP4/Sample B/JP4_Sample_B.out: 1.24233
+JP4/Sample C/JP4_Sample_C.out: 4.58772
+JP5/Sample A/JP5_BOC_Sample_A.out: 8.39193
+JP5/Sample B/JP5_BOC_Sample_B.out: 2.52133
+JP5/Sample C/JP5_BOC_Sample_C.out: 0.04273
+JP5/Sample D/JP5_BOC_Sample_D.out: 0.91723
+JP5/Sample E/JP5_BOC_Sample_E.out: 1.24347
+JP6/Sample A/JP6_Sample_A.out: 1.12660
+JP6/Sample B/JP6_Sample_B.out: 1.52436
+JP6/Sample C/JP6_Sample_C.out: 6.46353
+JP6/Sample D/JP6_Sample_D.out: 6.38770
+JP6/Sample E/JP6_Sample_E.out: 3.64609
+JP6/Sample F/JP6_Sample_F.out: 0.97084
+JP7/Sample A/JP7_Sample_A.out: 0.92320
+JP7/Sample B/JP7_Sample_B.out: 5.40306
+JP8/Sample A/JP8_BOC_Sample_A.out: 2.87892
+JP8/Sample B/JP8_BOC_Sample_B.out: 2.80058
+JP8/Sample C/JP8_BOC_Sample_C.out: 8.99287
+JP9/Sample A/JP9_Sample_A.out: 0.36538
+JP9/Sample B/JP9_Sample_B.out: 0.21848
+RB1/Sample A/BOC/RB1_BOC_Sample_A.out: NaN
+RB1/Sample A/EOC/RB1_EOC_Sample_A.out: Infinity
+RB1/Sample B/BOC/RB1_BOC_Sample_B.out: Infinity
+RB1/Sample B/EOC/RB1_EOC_Sample_B.out: Infinity
+RB1/Sample C/BOC/RB1_BOC_Sample_C.out: 1.78461
+RB1/Sample C/EOC/RB1_EOC_Sample_C.out: 2.23056
+RB1/Sample D/BOC/RB1_BOC_Sample_D.out: 1.61600
+RB1/Sample D/EOC/RB1_EOC_Sample_D.out: 2.95053
+RB1/Sample E/BOC/RB1_BOC_Sample_E.out: 1.06670
+RB1/Sample E/EOC/RB1_EOC_Sample_E.out: 3.35362
+RB2/Sample A/EOC/RB2_EOC_Sample_A.out: 6.04302
+RB2/Sample C/EOC/RB2_EOC_Sample_C.out: 5.78821
+RB2/Sample D/EOC/RB2_EOC_Sample_D.out: 4.15625
+RB3/Sample A/BOC/RB3_BOC_Sample_A.out: 0.49750
+T1/Sample A/T1_Sample_A.out: 0.28160
+T1/Sample B/T1_Sample_B.out: 0.97636
+T2/Sample A/BOC/T2_BOC_Sample_A.out: 2.67359
+T2/Sample A/EOC/T2_EOC_Sample_A.out: 1.12194
+T2/Sample B/BOC/T2_BOC_Sample_B.out: 1.84888
+T2/Sample B/EOC/T2_EOC_Sample_B.out: 0.16638
+TRIST-ER-1-2/Sample A/BOC/Trist_1-2_BOC_Sample_A.out: 0.77989
+TRIST-ER-1-2/Sample B/BOC/Trist_1-2_BOC_Sample_B.out: 0.78652
+TRIST-ER-1-2/Sample C/BOC/Trist_1-2_BOC_Sample_C.out: 0.13942
+TRIST-ER-1-2/Sample D/BOC/Trist_1-2_BOC_Sample_D.out: 1.00731
+TRIST-ER-1-2/Sample E/BOC/Trist_1-2_BOC_Sample_E.out: 0.96733
+TRIST-ER-7-8/Sample A/BOC/Trist_7-8_BOC_Sample_A.out: 0.97396
+TRIST-ER-7-8/Sample B/BOC/Trist_7-8_BOC_Sample_B.out: 1.01304
+TRIST-ER-7-8/Sample C/BOC/Trist_7-8_BOC_Sample_C.out: 0.93205
+TRIST-ER-7-8/Sample D/BOC/Trist_7-8_BOC_Sample_D.out: 1.27648
+TRIST-ER-7-8/Sample E/BOC/Trist_7-8_BOC_Sample_E.out: 2.12499

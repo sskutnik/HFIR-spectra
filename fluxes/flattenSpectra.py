@@ -141,9 +141,12 @@ generateFluxFiles(df_FT3_axBOC, "FT-3")
 
 df_RB_axial_BOC = pd.read_excel(tallyFile, sheet_name='RB-1 (BOC)')
 df_RB_axBOC = flattenSheet(df_RB_axial_BOC, 'T(E) Zone #', 'Sigma(E) Zone #', 'energy', 'deltaE')
- 
+generateFluxFiles(df_RB_axBOC, "RB-BOC")
+
+
 df_RB_axial_EOC = pd.read_excel(tallyFile, sheet_name='RB-1 (EOC)')
 df_RB_axEOC = flattenSheet(df_RB_axial_EOC, 'T(E) Zone #', 'Sigma(E) Zone #', 'energy', 'deltaE') 
+generateFluxFiles(df_RB_axEOC, "RB-EOC")
 
 #plt.savefig("RB_flux.png")
 

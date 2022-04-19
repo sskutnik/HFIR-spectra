@@ -24,7 +24,7 @@ sampleLocs = {
              "CTR-36","CTR-39","CTR-40","CTR-41","CTR-41",\
              "CTR-42-43","CTR-44-45","CTR-46","CTR-47",\
              "CTR-48","CTR-53","CTR-54"],\
-   "RB" : [ "RB1", "RB5","TRIST-ER-1-2","TRIST-ER-7-8",\
+   "RB" : [ "RB1", "RB2", "RB3","TRIST-ER-1-2","TRIST-ER-7-8",\
             "HFIR-RB-11J","HFIR-RB-12J","HFIR-MFE-RB-17J",\
             "HFIR-MFR-19J" ]
 }
@@ -116,12 +116,15 @@ plt.close()
 
 dfAvgFlux = pd.read_csv("./fluxes/MCNP_avg.csv").drop("Unnamed: 0",axis=1).rename({"Lethargy-weighted" : "MCNP"})
 
-print(dfAvg85MW["loc"].unique())
-
-RB_rows = dfAvg85MW.loc[dfAvg85MW["loc"] == "RB"]
-dfAvg85MW = dfAvg85MW.drop(RB_rows).reset_index()
+#print(dfAvg85MW["loc"].unique())
+print(dfAvg85MW.columns)
+#RB_rows = dfAvg85MW.loc[dfAvg85MW["loc"] == "RB"]
+dfAvg85MW = dfAvg85MW[dfAvg85MW["loc"] != "RB"]
+#print(RB_rows)
+#dfAvg85MW = dfAvg85MW.drop(RB_rows).reset_index()
 #print(dfAvgFlux)
-dfAvgFlux.join(dfAvg85MW, on=["E (MeV)", "loc"])
+pd.concat([dfAvgFlux,dfAvg85MW])
+#dfAvgFlux.join(dfAvg85MW, on=["E (MeV)", "loc"])
 print(dfAvgFlux)
 # Figure out the join op for dfAvgFlux & dfAvg85MW to plot the comparison by loc
 #dfAvgFlux = pd.concat(dfAvgFlux,dfAvg85MW)
